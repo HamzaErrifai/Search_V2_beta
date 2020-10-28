@@ -1,0 +1,39 @@
+{
+  "<term>": { "desc": "Search the term" },
+  "path": {
+    "options": [],
+    "desc": "show/add a path"
+  },
+  "sc": {
+    "options": [],
+    "desc": "show/add a shortcut"
+  },
+  "yt": {
+    "options": [],
+    "desc": "open/search in youtube"
+  },
+  "clc": {
+    "options": [],
+    "desc": "clear the console"
+  },
+  "--exit": {
+    "options": [],
+    "desc": "exit the program"
+  },
+  "--help": {
+    "options": [],
+    "desc": "show help"
+  },
+  "--private": {
+    "options": [],
+    "desc": "search in private mode"
+  },
+  "--hist": {
+    "options": [],
+    "desc": "show history"
+  },
+  "rm": {
+    "options": ["sc", "path"],
+    "desc": "remove a path/shortcut"
+  }
+}
