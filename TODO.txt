@@ -1,4 +1,0 @@
-- To make the data json file creates itself make a function init to initiate all the neccessary files to the program
-- Add the possibility to add notes
-- Maybe a GUI interface
-
