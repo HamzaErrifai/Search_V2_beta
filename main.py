@@ -1,11 +1,12 @@
 import os
+import pathlib
 from classes.History import History
 from classes.Search import Search
 from classes.Alert import Alert
 
 # TODO : make a way that the window will itself depending on the content
 line_count = 0
-with open("data\\data.json") as file:
+with open(str(pathlib.Path(__file__).parent.absolute())+"\\data\\data.json") as file:
     for line in file:
         if line != "\n":
             line_count += 1
