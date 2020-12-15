@@ -19,7 +19,7 @@ class File():
             f.write("# Your code Here\n")
             f.close()
             Path().addWithName(self.savePath+newFile, name)
-            os.system("code "+self.savePath+newFile)
+            self.edit(newFile)
         else:
             self.edit(newFile)
 

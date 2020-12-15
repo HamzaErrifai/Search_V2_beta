@@ -1,6 +1,6 @@
 import os
 import webbrowser
-
+from .Alert import Alert
 from .Path import Path
 from .Sc import Sc
 from .History import History
@@ -75,7 +75,7 @@ class Search:
         return False
 
     def start(self):
-        if(self.prompt()):
+        if(Alert.prompt()):
             self.histo.add(self.word)  # add the word to the history
             # Search for commands in the word matching in the data file
             for cmdKey in self.cmds.keys():
@@ -110,10 +110,6 @@ class Search:
             return False
         else:
             return True
-
-    def prompt(self):
-        answer = input("press 'ENTER' to continue or 'q' to abondon :")
-        return not(answer == 'q')
 
     def help(self):
         os.system("cls")
