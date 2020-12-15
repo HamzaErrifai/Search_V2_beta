@@ -1,1 +1,15 @@
-{"keep": "keep.google.com", "mdn": "developer.mozilla.org/en-US", "fb": "facebook.com", "messenger": "messenger.com", "msdn": "docs.microsoft.com", "weather": "weatherapp05.000webhostapp.com", "yt": "youtube.com", "spotify": "open.spotify.com", "ytwl": "www.youtube.com/playlist?list=WL", "jobs": "jobsfordevs.000webhostapp.com", "javadoc": "docs.oracle.com/en/java/javase/14/docs/api/index.html", "c#doc": "docs.microsoft.com/en-us/dotnet/csharp/", "twitch": "twitch.tv", "pydoc": "docs.python.org/3/"}
+{
+  "keep": "keep.google.com",
+  "mdn": "developer.mozilla.org/en-US",
+  "fb": "facebook.com",
+  "messenger": "messenger.com",
+  "msdn": "docs.microsoft.com",
+  "weather": "weatherapp05.000webhostapp.com",
+  "spotify": "open.spotify.com",
+  "ytwl": "www.youtube.com/playlist?list=WL",
+  "jobs": "jobsfordevs.000webhostapp.com",
+  "javadoc": "docs.oracle.com/en/java/javase/14/docs/api/index.html",
+  "c#doc": "docs.microsoft.com/en-us/dotnet/csharp/",
+  "twitch": "twitch.tv",
+  "pydoc": "docs.python.org/3/"
+}

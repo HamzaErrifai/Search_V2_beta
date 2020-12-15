@@ -6,6 +6,7 @@ from .Sc import Sc
 from .History import History
 from .Help import Help
 from .GetJson import GetJson
+from .File import File
 
 
 class Search:
@@ -15,6 +16,7 @@ class Search:
         self.histo = History()
         self.path = Path()  # all the paths
         self.sc = Sc()  # all the scs
+        self.file = File()
         self.domains = ['.com', '.tv', '.net', '.org']
 
     def private(self):
@@ -54,6 +56,8 @@ class Search:
     def showWhat(self, what):
         if(what == "clc"):
             return self.histo.clear()
+        elif(what == "yt"):
+            return self.getYt()
         elif what.startswith("--"):
             stop = what.find("--") + len("--")
             return getattr(self, what[stop:])()
@@ -62,14 +66,17 @@ class Search:
         return True
 
     def getYt(self):
-        stop = self.word.find("yt") + len("yt ")
-        webbrowser.open(
-            f"https://www.youtube.com/results?search_query={self.word[stop:]}", new=2)
+        if(self.word == "yt "):
+            stop = self.word.find("yt") + len("yt ")
+            webbrowser.open(
+                f"https://www.youtube.com/results?search_query={self.word[stop:]}", new=2)
+        else:
+            webbrowser.open("https://www.youtube.com/", new=2)
         return False
 
     def start(self):
         if(self.prompt()):
-            self.histo.add(self.word) #add the word to the history
+            self.histo.add(self.word)  # add the word to the history
             # Search for commands in the word matching in the data file
             for cmdKey in self.cmds.keys():
                 if(cmdKey == self.word.lower()):

@@ -2,3 +2,5 @@
 - Add the possibility to add notes
 - Maybe a GUI interface
 
+-add the possibility to reEdit the file
+-add the possibility to define the default text editor

@@ -36,6 +36,23 @@ class Shortcut():
         self.save(pathsDict)
         Alert("Success", "'{}' added successfully".format(newPath))
 
+    def addWithName(self, newPath, name):  # Shortcut
+        pathsDict = GetJson.parse(self.saveFile)  # get the dictionnary
+        newPath = str(newPath)
+        name = name.lower()
+
+        if newPath in pathsDict.values():
+            Alert("Alert", "{} already exists".format(newPath))
+            return
+
+        if name in pathsDict:  # if the key already exists
+            Alert("Alert", "{} already exists".format(name))
+            return
+
+        pathsDict[name] = newPath
+        self.save(pathsDict)
+        Alert("Success", "'{}' added successfully".format(newPath))
+
     def delete(self, pathName):  # needs to be recreated
         pathsDict = GetJson.parse(self.saveFile)  # get the dictionnary
         try:

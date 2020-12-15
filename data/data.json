@@ -4,6 +4,10 @@
     "options": [],
     "desc": "show/add a path"
   },
+  "file": {
+    "options": [],
+    "desc": "show/modify/add a file"
+  },
   "sc": {
     "options": [],
     "desc": "show/add a shortcut"
@@ -33,7 +37,7 @@
     "desc": "show history"
   },
   "rm": {
-    "options": ["sc", "path"],
+    "options": ["sc", "path", "file"],
     "desc": "remove a path/shortcut"
   }
 }
