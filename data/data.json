@@ -20,6 +20,10 @@
     "options": [],
     "desc": "clear the console"
   },
+  "cls": {
+    "options": [],
+    "desc": "clear the console"
+  },
   "--exit": {
     "options": [],
     "desc": "exit the program"

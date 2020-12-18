@@ -54,7 +54,7 @@ class Search:
         return True
 
     def showWhat(self, what):
-        if(what == "clc"):
+        if(what == "clc" or what == "cls"):
             return self.histo.clear()
         elif(what == "yt"):
             return self.getYt()
