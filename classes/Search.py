@@ -66,7 +66,7 @@ class Search:
         return True
 
     def getYt(self):
-        if(self.word == "yt "):
+        if(self.word.startswith("yt ")):
             stop = self.word.find("yt") + len("yt ")
             webbrowser.open(
                 f"https://www.youtube.com/results?search_query={self.word[stop:]}", new=2)
